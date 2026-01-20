@@ -2,9 +2,10 @@
   "name": "constellation-scroll",
   "version": "1.0.0",
   "description": "Interactive scroll-responsive constellation webpage with Three.js",
-  "main": "index.html",
+  "main": "public/index.html",
   "scripts": {
-    "dev": "http-server -p 8080 -o"
+    "dev": "http-server public -p 8080 -o",
+    "build": "mkdir -p dist && cp -r public/* dist/"
   },
   "keywords": [
     "three.js",
